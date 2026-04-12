@@ -356,7 +356,7 @@ footer a:active {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     body {
         font-size: 18px;
         /* Further reduce font size for very small screens */
