@@ -1,0 +1,426 @@
+body {
+    background-color: #121212;
+    /* Dark background for everything outside of the wrapper */
+    font-size: 24px;
+    /* Font size for the entire page */
+    font-family: Arial;
+    /* Font family for the entire page */
+}
+
+header,
+header h1 a,
+header h1 a:visited,
+header h1 a:active {
+    text-decoration: none;
+    /* Remove underline from links */
+    color: white;
+    /* Text color for logo header */
+    text-align: center;
+    /* Text alignment for logo header */
+    text-shadow: 10px 10px 20px black;
+    /* Text shadow for logo header */
+    font-size: 1.2em;
+    /* Larger font size for logo header */
+}
+
+header h1 a:hover {
+    color: #00FFA3;
+    /* Text color on hover */
+    text-shadow: 0 0 15px rgba(0, 255, 163, 0.5);
+    /* Text shadow on hover */
+    transition: all 0.2s ease;
+    /* Transition effect */
+}
+
+nav,
+nav a {
+    display: flex;
+    /* Display nav and nav links as flex containers */
+    flex-wrap: wrap;
+    /* Allow nav items to wrap to the next line on smaller screens */
+    justify-content: center;
+    /* Center nav items */
+    text-align: center;
+    /* Text alignment for nav */
+    text-decoration: none;
+    /* Remove underline from nav elements */
+    color: white;
+    /* Text color for nav */
+    font-weight: bold;
+    /* Makes nav elements bold */
+    text-shadow: 10px 10px 20px black;
+    /* Text shadow */
+    padding: 12px 20px;
+    /* Space between each nav element */
+    font-size: 1em;
+    /* Font size for nav */
+}
+
+nav a {
+    display: flex;
+    /* Display nav links as flex containers */
+    align-items: center;
+    /* Center nav link content vertically */
+    justify-content: center;
+    /* Center nav link content horizontally */
+    min-height: 3em;
+    /* Minimum height for nav links */
+
+    background-color: rgb(29, 29, 29);
+    /* Square background element behind nav elements */
+    border-radius: 10px;
+    /* Rounded corners for nav background box */
+    text-align: center;
+    /* Text alignment for nav elements */
+}
+
+nav a:hover {
+    background-color: #303030;
+    /* Background color on hover */
+    color: #00FFA3;
+    /* Text color on hover */
+    box-shadow: 0 0 15px rgba(0, 255, 163, 0.5);
+    /* Box shadow on hover */
+    text-shadow: 0 0 15px rgba(0, 255, 163, 0.5);
+    /* Text shadow on hover */
+    transition: all 0.3s ease;
+    /* Transition effect */
+}
+
+h2 {
+    text-align: center;
+    /* Text alignment for headings */
+    text-shadow: 10px 10px 20px black;
+    /* Text shadow for headings */
+}
+
+p,
+p a,
+p a:visited,
+p a:active {
+    text-decoration: none;
+    /* Remove underline from links in paragraphs */
+    text-align: center;
+    /* Text alignment for paragraphs */
+    padding: 10px 0;
+    /* Space between paragraphs */
+    color: white;
+    /* Text color for paragraphs */
+}
+
+p a {
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+p a:hover {
+    color: #00FFA3;
+    /* Text color on hover */
+    text-shadow: 0 0 15px rgba(0, 255, 163, 0.5);
+    /* Text shadow on hover */
+    transition: all 0.3s ease;
+    /* Transition effect */
+}
+
+#wrapper {
+    width: 90%;
+    /* Everything inside wrapper takes up 90% of the available space */
+    max-width: 1200px;
+    margin-right: auto;
+    /* Center the wrapper */
+    margin-left: auto;
+    /* Center the wrapper */
+    color: white;
+    /* Text color for everything inside of the
+     wrapper */
+    background-color: #303030;
+    /* Background color for the wrapper */
+    min-width: 1400px;
+    /* Minimum width for the wrapper */
+    border-radius: 10px;
+    /* Rounded corners for the wrapper */
+    padding: 0 30px 30px 20px;
+    /* Keeps elements inside of the wrapper from touching the edges */
+}
+
+/* --- Table Styling Start --- */
+
+table {
+    /* Center the table */
+    width: 80%;
+    /* Table takes up full width of the wrapper */
+    border-collapse: collapse;
+    /* Remove space between table cells */
+    margin: 30px auto;
+    /* Space around the table */
+    background-color: #1d1d1d;
+    /* Background color for the table */
+    border-radius: 10px;
+    /* Rounded corners for the table */
+    overflow: hidden;
+    /* Ensures rounded corners are applied to the table */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Box shadow for the table */
+}
+
+th {
+    background-color: #404040;
+    /* Background color for table headers */
+    color: #00FFA3;
+    /* Text color for table headers */
+    padding: 10px;
+    /* Space inside table headers */
+    text-align: center;
+    /* Text alignment for table headers */
+    font-size: 0.9em;
+    /* Font size for table headers */
+    border-bottom: 2px solid #303030;
+    /* Border below table headers */
+}
+
+td {
+    padding: 12px 15px;
+    /* Space inside table cells */
+    border-bottom: 1px solid #303030;
+    /* Border below table cells */
+    font-size: 0.8em;
+    /* Font size for table cells */
+    color: #ffffff;
+    /* Text color for table cells */
+    text-align: center;
+    /* Text alignment for table cells */
+}
+
+tr:hover {
+    background-color: #2a2a2a;
+    /* Background color on hover */
+}
+
+/* --- Table Styling End --- */
+
+.featured-image {
+    display: block;
+    /* Display the image as a block element */
+    margin-left: auto;
+    /* Center the image */
+    margin-right: auto;
+    /* Center the image */
+    width: 90%;
+    /* Images takes up 90% of the available space inside the wrapper */
+    border-radius: 10px;
+    /* Rounded corners for the image */
+    margin-top: 20px;
+    /* Space above the image */
+}
+
+.featured-bundle {
+    width: 100%;
+    /* Takes up full width of the wrapper */
+    border-radius: 10px;
+    /* Rounded corners for the bundle */
+    margin-top: 20px;
+    /* Space above the bundle */
+}
+
+.bundle-gallery {
+    display: flex;
+    /* Display the gallery as a flex container */
+    justify-content: center;
+    /* Center the gallery items */
+    gap: 70px;
+    /* Space between gallery items */
+}
+
+.bundle-item {
+    display: flex;
+    /* Display the item as a flex container */
+    flex-direction: column;
+    /* Stack child elements vertically */
+    align-items: center;
+    /* Center child elements horizontally */
+}
+
+.bundle-item h2 {
+    margin: 40px 0 0 0;
+    /* Space above the heading */
+    text-shadow: 10px 10px 20px black;
+    /* Text shadow for the heading */
+}
+
+footer,
+footer a,
+footer a:visited,
+footer a:active {
+    text-decoration: none;
+    /* Remove underline from footer links */
+    color: white
+        /* Text color for footer */
+    ;
+    text-align: center;
+    /* Text alignment for footer */
+    color: white;
+    /* Text color for footer */
+    padding: 20px 0;
+    /* Space above and below footer content */
+    font-size: 0.8em;
+    /* Font size for footer */
+}
+
+.checker-form {
+    background-color: #303030;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.checker-form label {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.checker-form input, .checker-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #121212;
+    border: 1px solid #000;
+    color: white;
+    border-radius: 5px;
+}
+
+.checker-form textarea {
+    resize: none;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.checker-form input[type="submit"] {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.checker-form input[type="submit"]:hover {
+    color: #00FFA3;
+    box-shadow: 0 0 15px rgba(0, 255, 163, 0.5);
+}
+
+@media (min-width: 1200px) {
+    #wrapper {
+        width: 70%;
+        /* On larger screens, the wrapper takes up 70% of the available space */
+        min-width: 1100px;
+        /* Minimum width for the wrapper on larger screens */
+        ;
+    }
+}
+
+@media (max-width: 1199px) {
+    #wrapper {
+        width: 95%;
+        /* On smaller screens, the wrapper takes up 95% of the available space */
+        min-width: 0;
+        /* Remove minimum width on smaller screens */
+    }
+
+    nav {
+        flex-wrap: nowrap;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        /* Reduce padding for nav elements on smaller screens */
+        ;
+        font-size: 0.8em;
+        /* Reduce font size for nav elements on smaller screens */
+        margin: 0 5px;
+        /* Add horizontal margin between nav elements on smaller screens */
+    }
+
+    .bundle-gallery {
+        gap: 30px;
+        /* Reduce gap between gallery items on smaller screens */
+    }
+
+    table {
+        font-size: 0.9em;
+        /* Reduce font size for table on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+        /* Further reduce font size for very small screens */
+    }
+
+    #wrapper {
+        width: 95%;
+        /* On very small screens, the wrapper takes up 95% of the available space */
+        padding: 10px;
+        /* Reduce padding for the wrapper on very small screens */
+    }
+
+    nav {
+        display: flex;
+        /* Display nav as a flex container */
+        flex-direction: column;
+        /* Stack nav items vertically */
+        padding: 5px 0;
+        /* Reduce padding for nav on very small screens */
+        gap: 1px;
+        /* Reduce gap between nav items on very small screens */
+    }
+
+    nav a {
+        display: block;
+        /* Display nav links as block elements */
+        width: 100%;
+        /* Nav links take up full width of the nav container */
+        font-size: 1em;
+        /* Reduce font size for nav links on very small screens */
+        box-sizing: border-box;
+        /* Ensure padding is included in the width of nav links */
+        padding: 15px 0;
+        /* Increase padding for nav links on very small screens */
+        min-height: auto;
+        /* Remove minimum height for nav links on very small screens */
+    }
+
+    .bundle-gallery {
+        flex-direction: column;
+        /* Stack gallery items vertically */
+        align-items: center;
+        /* Center gallery items horizontally */
+        gap: 40px;
+        /* Reduce gap between gallery items on very small screens */
+    }
+
+    .bundle-item {
+        width: 100%;
+        /* Bundle items take up full width of the gallery container */
+    }
+
+    .featured-image,
+    table {
+        width: 100%;
+        /* Images and tables take up full width of the wrapper on very small screens */
+    }
+
+    section {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
+        /* Allow horizontal scrolling for tables on very small screens */
+    }
+}
