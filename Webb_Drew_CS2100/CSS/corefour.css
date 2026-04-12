@@ -94,6 +94,11 @@ h2 {
     /* Text shadow for headings */
 }
 
+h3 {
+    font-size: 1.05em;
+    text-decoration: underline;
+}
+
 p,
 p a,
 p a:visited,
