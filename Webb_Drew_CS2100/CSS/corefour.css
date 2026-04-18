@@ -148,8 +148,6 @@ p a:hover {
     /* Keeps elements inside of the wrapper from touching the edges */
 }
 
-/* --- Table Styling Start --- */
-
 table {
     /* Center the table */
     width: 80%;
@@ -201,8 +199,6 @@ tr:hover {
     /* Background color on hover */
 }
 
-/* --- Table Styling End --- */
-
 .featured-image {
     display: block;
     /* Display the image as a block element */
@@ -216,15 +212,25 @@ tr:hover {
     /* Rounded corners for the image */
     margin-top: 20px;
     /* Space above the image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .featured-bundle {
-    width: 100%;
+    width: 300px;
     /* Takes up full width of the wrapper */
+    height: 300px;
     border-radius: 10px;
     /* Rounded corners for the bundle */
     margin-top: 20px;
     /* Space above the bundle */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.featured-bundle:hover,
+.featured-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 163, 0.6);
+    border-color: #00FFA3;
 }
 
 .bundle-gallery {
@@ -288,7 +294,8 @@ footer a:active {
     text-align: left;
 }
 
-.checker-form input, .checker-form textarea {
+.checker-form input,
+.checker-form textarea {
     margin-bottom: 15px;
     padding: 10px;
     background-color: #121212;
