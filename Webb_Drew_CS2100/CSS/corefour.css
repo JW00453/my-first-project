@@ -146,6 +146,7 @@ p a:hover {
     /* Rounded corners for the wrapper */
     padding: 0 30px 30px 20px;
     /* Keeps elements inside of the wrapper from touching the edges */
+    box-shadow: 0 0 15px rgba(0, 255, 163, 0.5);
 }
 
 table {
@@ -264,13 +265,10 @@ footer a:visited,
 footer a:active {
     text-decoration: none;
     /* Remove underline from footer links */
-    color: white
-        /* Text color for footer */
-    ;
-    text-align: center;
-    /* Text alignment for footer */
     color: white;
     /* Text color for footer */
+    text-align: center;
+    /* Text alignment for footer */
     padding: 20px 0;
     /* Space above and below footer content */
     font-size: 0.8em;
@@ -323,6 +321,42 @@ footer a:active {
 .checker-form input[type="submit"]:hover {
     color: #00FFA3;
     box-shadow: 0 0 15px rgba(0, 255, 163, 0.5);
+}
+
+.featured-cartbtn {
+    display: block;
+    margin: 25px auto 0;
+    padding: 15px 40px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    border: 1px solid #404040;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bundle-cartbtn {
+    display: block;
+    margin: 25px auto 0;
+    padding: 15px 40px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    border: 1px solid #404040;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 70%;
+}
+
+.featured-cartbtn:hover,
+.bundle-cartbtn:hover {
+    color: #00FFA3;
+    box-shadow: 0 0 15px rgba(0, 255, 163, 0.5);
+    border-color: #00FFA3;
 }
 
 @media (min-width: 1200px) {
