@@ -32,6 +32,10 @@ header h1 a:hover {
     /* Transition effect */
 }
 
+section h2 {
+    margin-bottom: 5px;
+}
+
 nav,
 nav a {
     display: flex;
@@ -155,7 +159,7 @@ table {
     /* Table takes up full width of the wrapper */
     border-collapse: collapse;
     /* Remove space between table cells */
-    margin: 30px auto;
+    margin: 10px auto 30px;
     /* Space around the table */
     background-color: #1d1d1d;
     /* Background color for the table */
@@ -462,7 +466,13 @@ footer a:active {
     }
 
     section {
+        overflow-x: visible;
+    }
+
+    .table-wrapper {
         overflow-x: auto;
+        width: 100%;
+
     }
 
     table {
